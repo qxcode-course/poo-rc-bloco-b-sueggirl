@@ -1,0 +1,31 @@
+version: '0.2'
+sources:
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
+- database: poo
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: /home/tharsyla/Documentos/poo2/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-22 22:18:06'
+  filters:
+  - acesso
+  - simples
+expanded:
+- poo@campanha-principal
+- poo@bloco_b-agregação-simples
+tasks:
+  poo@chinela: '{rate:80, human:2amigo, alone:8, study:90}'
+  poo@camisa: '{rate:90, iagen:2, alone:10, study:120}'
+  poo@roupa: '{rate:100, alone:10, study:120}'
+  poo@relogio: '{rate:100, other:na_verdade_eu_fiz_o_codigo_em_sala_aqui_eu_refiz_e_corrigi,
+    alone:7, study:30}'
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 1
+  xray: 0
+lang: py
+selected: poo@motoca
