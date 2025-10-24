@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-23_23-02-40",
+            "content": "@@ -2901,63 +2901,9 @@\n %0A   \n-     elif args%5B0%5D == %22play%22:%0A            game.play()%0A  \n+%0A\n %0Amai\n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-23_23-02-55",
+            "content": "@@ -2956,182 +2956,8 @@\n )%0A  \n-      elif args%5B0%5D == %22sleep%22:%0A            game.sleep()%0A        elif args%5B0%5D == %22shower%22:%0A            game.shower()%0A        else:%0A            print(%22fail: comando invalido%22)%0A\n %0Amai\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-10-23_23-03-33",
+            "content": "@@ -1416,202 +1416,38 @@\n     \n-# Calculando a quantidade de turnos que o pet dormiu%0A        energy_before_sleep = self.energy%0A        self.setEnergy(self.energyMax)%0A        energy_gained = self.energyMax - energy_before_sleep\n+self.setEnergy(self.energyMax)\n %0A   \n@@ -1478,21 +1478,9 @@\n e + \n-energy_gained\n+1\n )%0A%0A \n@@ -3129,12 +3129,13 @@\n do%22)%0A%0Amain()\n+%0A\n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-10-23_23-04-42",
+            "content": "@@ -29,33 +29,33 @@\n nit__(self, \n-carregado\n+energyMax\n : int, clean\n@@ -78,25 +78,25 @@\n    self.\n-carregado\n+energyMax\n  = energ\n@@ -327,25 +327,25 @@\n y, self.\n-carregado\n+energyMax\n ))%0A     \n@@ -1325,25 +1325,25 @@\n %3E= self.\n-carregado\n+energyMax\n  - 5:%0A  \n@@ -1535,25 +1535,25 @@\n gy(self.\n-carregado\n+energyMax\n )%0A      \n@@ -1575,25 +1575,25 @@\n  = self.\n-carregado\n+energyMax\n  - energ\n@@ -1938,25 +1938,25 @@\n %7D/%7Bself.\n-carregado\n+energyMax\n %7D, L:%7Bse\n@@ -2009,17 +2009,16 @@\n s Game:%0A\n-%0A\n     def \n@@ -2080,25 +2080,25 @@\n t(self, \n-carregado\n+energyMax\n : int, c\n@@ -2141,25 +2141,25 @@\n magochi(\n-carregado\n+energyMax\n , cleanM\n@@ -2907,25 +2907,25 @@\n         \n-carregado\n+energyMax\n  = int(a\n@@ -2997,17 +2997,17 @@\n Pet(\n-carregado\n+energyMax\n , cl\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-23_23-18-00",
+            "content": "@@ -90,25 +90,25 @@\n egado = \n-carregado\n+energyMax\n %0A       \n@@ -155,25 +155,25 @@\n nergy = \n-carregado\n+energyMax\n %0A       \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-18-17",
+            "content": "@@ -41,37 +41,40 @@\n carregado: int, \n-limpo\n+cleanMax\n : int):%0A        \n@@ -117,21 +117,27 @@\n elf.\n-limpo = limpo\n+cleanMax = cleanMax\n %0A   \n@@ -186,21 +186,24 @@\n clean = \n-limpo\n+cleanMax\n %0A       \n@@ -480,21 +480,24 @@\n n, self.\n-limpo\n+cleanMax\n ))%0A     \n@@ -1831,21 +1831,24 @@\n an(self.\n-limpo\n+cleanMax\n )%0A      \n@@ -1971,21 +1971,24 @@\n %7D/%7Bself.\n-limpo\n+cleanMax\n %7D, I:%7Bse\n@@ -2097,21 +2097,24 @@\n o: int, \n-limpo\n+cleanMax\n : int):%0A\n@@ -2153,21 +2153,24 @@\n regado, \n-limpo\n+cleanMax\n )%0A%0A    d\n@@ -2945,21 +2945,24 @@\n         \n-limpo\n+cleanMax\n  = int(a\n@@ -3009,13 +3009,16 @@\n do, \n-limpo\n+cleanMax\n )%0A  \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-19-19",
+            "content": "@@ -169,23 +169,21 @@\n    self.\n-limpeza\n+clean\n  = limpo\n@@ -403,29 +403,25 @@\n  set\n-Limpeza(self, limpeza\n+Clean(self, clean\n : in\n@@ -437,23 +437,21 @@\n    self.\n-limpeza\n+clean\n  = max(0\n@@ -456,23 +456,21 @@\n (0, min(\n-limpeza\n+clean\n , self.l\n@@ -484,39 +484,37 @@\n         if self.\n-limpeza\n+clean\n  == 0:%0A         \n@@ -656,23 +656,21 @@\n  def get\n-Limpeza\n+Clean\n (self):%0A\n@@ -689,23 +689,21 @@\n rn self.\n-limpeza\n+clean\n %0A%0A    de\n@@ -961,28 +961,24 @@\n .set\n-Limpeza(self.limpeza\n+Clean(self.clean\n  - 3\n@@ -1108,23 +1108,21 @@\n if self.\n-limpeza\n+clean\n  == 0:%0A \n@@ -1809,15 +1809,13 @@\n .set\n-Limpeza\n+Clean\n (sel\n@@ -1944,15 +1944,13 @@\n elf.\n-limpeza\n+clean\n %7D/%7Bs\n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-21-14",
+            "content": "@@ -219,20 +219,21 @@\n    self.\n-vivo\n+alive\n  = True%0A\n@@ -367,36 +367,37 @@\n            self.\n-vivo\n+alive\n  = False%0A%0A    de\n@@ -533,20 +533,21 @@\n    self.\n-vivo\n+alive\n  = False\n@@ -802,20 +802,21 @@\n rn self.\n-vivo\n+alive\n %0A%0A    de\n@@ -841,36 +841,37 @@\n     if not self.\n-vivo\n+alive\n :%0A            pr\n@@ -1237,12 +1237,13 @@\n elf.\n-vivo\n+alive\n :%0A  \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-22-22",
+            "content": "@@ -1689,36 +1689,37 @@\n     if not self.\n-vivo\n+alive\n :%0A            pr\n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-22-57",
+            "content": "@@ -2556,21 +2556,22 @@\n     def \n-banho\n+shower\n (self):%0A\n@@ -2672,21 +2672,22 @@\n elf.pet.\n-banho\n+shower\n ()%0A%0Adef \n@@ -3196,21 +3196,22 @@\n %5B0%5D == %22\n-banho\n+shower\n %22:%0A     \n@@ -3226,13 +3226,14 @@\n ame.\n-banho\n+shower\n ()%0A \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-23-54",
+            "content": "@@ -1405,16 +1405,76 @@\n  return%0A\n+        # Calculando a quantidade de turnos que o pet dormiu\n %0A       \n@@ -1655,37 +1655,38 @@\n ained)%0A%0A    def \n-banho\n+shower\n (self):%0A        \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-25-17",
+            "content": "@@ -1409,69 +1409,9 @@\n urn%0A\n-        # Calculando a quantidade de turnos que o pet dormiu\n %0A\n+\n     \n@@ -1595,38 +1595,37 @@\n ained)%0A%0A    def \n-shower\n+banho\n (self):%0A        \n@@ -2495,22 +2495,21 @@\n     def \n-shower\n+banho\n (self):%0A\n@@ -2610,22 +2610,21 @@\n elf.pet.\n-shower\n+banho\n ()%0A%0Adef \n@@ -3133,22 +3133,21 @@\n %5B0%5D == %22\n-shower\n+banho\n %22:%0A     \n@@ -3162,14 +3162,13 @@\n ame.\n-shower\n+banho\n ()%0A \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-28-34",
+            "content": "@@ -1413,17 +1413,69 @@\n         \n+# Calculando a quantidade de turnos que o pet dormiu\n %0A\n-\n         \n@@ -1555,27 +1555,29 @@\n         \n-recarregado\n+energy_gained\n  = self.\n@@ -1643,19 +1643,21 @@\n e + \n-recarregado\n+energy_gained\n )%0A%0A \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-23_23-29-58",
+            "content": "class Tamagochi:\n    def __init__(self, carregado: int, limpo: int):\n        self.carregado = carregado\n        self.limpo = limpo\n        self.energy = carregado\n        self.limpeza = limpo\n        self.age = 0\n        self.vivo = True\n\n    def setEnergy(self, energy: int):\n        self.energy = max(0, min(energy, self.carregado))\n        if self.energy == 0:\n            self.vivo = False\n\n    def setLimpeza(self, limpeza: int):\n        self.limpeza = max(0, min(limpeza, self.limpo))\n        if self.limpeza == 0:\n            self.vivo = False\n\n    def setAge(self, age: int):\n        self.age = age\n\n    def getEnergy(self):\n        return self.energy\n\n    def getLimpeza(self):\n        return self.limpeza\n\n    def getAge(self):\n        return self.age\n\n    def isAlive(self):\n        return self.vivo\n\n    def play(self):\n        if not self.vivo:\n            print(\"fail: pet esta morto\")\n            return\n        self.setEnergy(self.energy - 2)\n        self.setLimpeza(self.limpeza - 3)\n        self.setAge(self.age + 1)\n        if self.energy == 0:\n            print(\"fail: pet morreu de fraqueza\")\n        if self.limpeza == 0:\n            print(\"fail: pet morreu de sujeira\")\n\n    def sleep(self):\n        if not self.vivo:\n            print(\"fail: pet esta morto\")\n            return\n        if self.energy >= self.carregado - 5:\n            print(\"fail: nao esta com sono\")\n            return\n        \n        energy_before_sleep = self.energy\n        self.setEnergy(self.carregado)\n        recarregado = self.carregado - energy_before_sleep\n        self.setAge(self.age + recarregado)\n\n    def shower(self):\n        if not self.vivo:\n            print(\"fail: pet esta morto\")\n            return\n        self.setEnergy(self.energy - 3)\n        self.setLimpeza(self.limpo)\n        self.setAge(self.age + 2)\n\n    def __str__(self):\n        return f\"E:{self.energy}/{self.carregado}, L:{self.limpeza}/{self.limpo}, I:{self.age}\"\n\nclass Game:\n\n    def __init__(self):\n        self.pet = None\n\n    def initPet(self, carregado: int, limpo: int):\n        self.pet = Tamagochi(carregado, limpo)\n\n    def show(self):\n        if self.pet is None:\n            print(\"fail: nenhum pet\")\n        else:\n            print(self.pet)\n\n    def play(self):\n        if self.pet is None:\n            print(\"fail: nenhum pet\")\n        else:\n            self.pet.play()\n\n    def sleep(self):\n        if self.pet is None:\n            print(\"fail: nenhum pet\")\n        else:\n            self.pet.sleep()\n\n    def shower(self):\n        if self.pet is None:\n            print(\"fail: nenhum pet\")\n        else:\n            self.pet.shower()\n\ndef main():\n    game = Game()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            carregado = int(args[1])\n            limpo = int(args[2])\n            game.initPet(carregado, limpo)\n        elif args[0] == \"show\":\n            game.show()\n        elif args[0] == \"play\":\n            game.play()\n        elif args[0] == \"sleep\":\n            game.sleep()\n        elif args[0] == \"shower\":\n            game.shower()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "127"
+        }
+    ]
+}
